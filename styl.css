@@ -1,0 +1,154 @@
+body {
+    background-color: #8d0202;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    
+                 
+}
+
+ 
+header h1 {
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-left: 20px aliceblue;
+    text-transform: uppercase;
+    margin:  20px 0;
+    border:15px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    padding-left: 20px;
+}
+
+header .highlight {
+    color: rgb(255, 217, 0);
+    font-weight: bold;
+}
+
+ 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ 
+.emperor-section {
+    grid-column: span 2;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 720px auto;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.emperor-section:hover{
+    transform: translateY(-10px);
+}
+
+
+.supporting-section .empress,
+.supporting-section .lions,
+.supporting-section .lulu,
+.supporting-section .AAU {
+    transition: transform 0.3s;  
+}
+
+.supporting-section .empress:hover,
+.supporting-section .lions:hover,
+.supporting-section .lulu:hover,
+.supporting-section .AAU:hover {
+    transform: scale(1.05);  
+}
+
+.emperor-section img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.emperor-section .content {
+    max-width: 600px;
+}
+
+.emperor-section h2 {
+    color: rgb(255, 217, 0);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.emperor-section .text-highlight {
+    color: lightyellow;
+    font-weight: bold;
+}
+
+ 
+.supporting-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns */
+    gap: 20px;
+}
+
+.supporting-section div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;  
+    width: min(25vw, 250px);  
+    min-height: 250px; 
+    
+       
+        transition: transform 0.3s;
+}
+
+
+.supporting-section img {
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.supporting-section h3 {
+    color: rgb(255, 217, 0);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.supporting-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ 
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .emperor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .emperor-section img {
+        margin: 0 auto;
+    }
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 217, 0);
+}
